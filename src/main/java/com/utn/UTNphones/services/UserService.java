@@ -38,6 +38,7 @@ public class UserService {
         return userRepository.findById(id)
                 .orElseThrow(UserNotExists::new);
     }
+
     public void existsById(Integer id) {
         if (!userRepository.existsById(id))
             throw new UserNotExists();

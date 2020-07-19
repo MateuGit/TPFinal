@@ -75,6 +75,7 @@ public class InvoicesManagmentControllerTest {
         assertEquals(u.size(), invoices.size());
 
     }
+
     @Test
     public void getByUserIdBetweenDatesEmpty() throws Exception {
         List<Invoice> invoices = new ArrayList<>();

@@ -15,9 +15,7 @@ import com.utn.UTNphones.domains.User;
 import com.utn.UTNphones.domains.dto.requests.EmployeeLoginDTO;
 import com.utn.UTNphones.domains.dto.requests.Login;
 import com.utn.UTNphones.domains.dto.requests.PhonelineDTO;
-import com.utn.UTNphones.domains.dto.requests.SearchBetweenDatesDTO;
 import com.utn.UTNphones.domains.dto.requests.UserDTO;
-import com.utn.UTNphones.exceptions.SearchByDatesException;
 import com.utn.UTNphones.exceptions.cityExceptions.CityNotExists;
 import com.utn.UTNphones.exceptions.phonelineExceptions.IlegalUserForPhoneline;
 import com.utn.UTNphones.exceptions.phonelineExceptions.PhonelineAlreadyExists;
@@ -45,9 +43,7 @@ import org.springframework.validation.MapBindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 
-import java.time.LocalDate;
 import java.util.Collections;
-import java.util.Optional;
 
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -98,7 +94,7 @@ public class AdviceControllerTest {
 
     public AdviceControllerTest() {
         MockitoAnnotations.initMocks(this);
-        mockMvc = MockMvcBuilders.standaloneSetup(invoiceManagementController,callManagementController, rateManagementController, phonelineManagementController, loginController, clientManagementController)
+        mockMvc = MockMvcBuilders.standaloneSetup(invoiceManagementController, callManagementController, rateManagementController, phonelineManagementController, loginController, clientManagementController)
                 .setControllerAdvice(new AdviceController())
                 .build();
     }

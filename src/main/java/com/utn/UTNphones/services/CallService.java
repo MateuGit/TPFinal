@@ -1,9 +1,9 @@
 package com.utn.UTNphones.services;
 
 import com.utn.UTNphones.domains.Call;
+import com.utn.UTNphones.domains.Phoneline;
 import com.utn.UTNphones.domains.dto.requests.SearchBetweenDatesDTO;
 import com.utn.UTNphones.domains.dto.responses.CityTop;
-import com.utn.UTNphones.domains.Phoneline;
 import com.utn.UTNphones.repositories.ICallRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;

@@ -35,7 +35,7 @@ public class SearchBetweenDatesDTO {
     private final LocalDate end;
 
     public static SearchBetweenDatesDTO fromDates(LocalDate start, LocalDate end) {
-        if (end.isBefore(start)){
+        if (end.isBefore(start)) {
             throw new SearchByDatesException();
         }
         return SearchBetweenDatesDTO.builder()

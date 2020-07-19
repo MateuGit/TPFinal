@@ -71,6 +71,7 @@ public class InvoiceClientControllerTest {
         assertEquals(u.size(), invoiceList.size());
 
     }
+
     @Test
     public void getByUserIdBetweenDatesOk() throws Exception {
         User user = User.builder().id(1).build();

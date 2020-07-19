@@ -57,6 +57,7 @@ public class CallsManagmentControllerTest {
         List u = new ObjectMapper().readValue(result.getResponse().getContentAsString(), List.class);
         assertEquals(u.size(), calls.size());
     }
+
     @Test
     public void getUserEmpty() throws Exception {
         List calls = new ArrayList<>();

@@ -1,8 +1,8 @@
 package com.utn.UTNphones.controllers;
 
+import com.utn.UTNphones.domains.User;
 import com.utn.UTNphones.domains.dto.requests.Login;
 import com.utn.UTNphones.domains.dto.requests.UserDTO;
-import com.utn.UTNphones.domains.User;
 import com.utn.UTNphones.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataAccessException;

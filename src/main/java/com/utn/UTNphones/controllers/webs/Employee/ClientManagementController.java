@@ -1,8 +1,8 @@
 package com.utn.UTNphones.controllers.webs.Employee;
 
 import com.utn.UTNphones.controllers.UserController;
-import com.utn.UTNphones.domains.dto.requests.UserDTO;
 import com.utn.UTNphones.domains.User;
+import com.utn.UTNphones.domains.dto.requests.UserDTO;
 import com.utn.UTNphones.exceptions.usersExceptions.UserNotExists;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

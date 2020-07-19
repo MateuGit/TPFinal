@@ -69,6 +69,7 @@ public class CallClientControllerTest {
         List u = new ObjectMapper().readValue(result.getResponse().getContentAsString(), List.class);
         assertEquals(u.size(), cityTopList.size());
     }
+
     @Test
     public void mostDestinationsCalledEmpty() throws Exception {
         List<CityTop> cityTopList = new ArrayList<>();
@@ -105,6 +106,7 @@ public class CallClientControllerTest {
         List u = new ObjectMapper().readValue(result.getResponse().getContentAsString(), List.class);
         assertEquals(u.size(), callList.size());
     }
+
     @Test
     public void getCallsBetweenDatesEmpty() throws Exception {
         List<Call> callList = new ArrayList<>();

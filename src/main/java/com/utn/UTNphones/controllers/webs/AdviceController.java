@@ -90,10 +90,11 @@ public class AdviceController {
     public ErrorResponseDTO handlePhonelineTypeError(PhonelineTypeError ex) {
         return ErrorResponseDTO.fromRunTimeException(ex, 13);
     }
+
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(SearchByDatesException.class)
-    public ErrorResponseDTO handleSearchByDatesException(SearchByDatesException ex){
-        return ErrorResponseDTO.fromRunTimeException(ex,16);
+    public ErrorResponseDTO handleSearchByDatesException(SearchByDatesException ex) {
+        return ErrorResponseDTO.fromRunTimeException(ex, 16);
     }
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)

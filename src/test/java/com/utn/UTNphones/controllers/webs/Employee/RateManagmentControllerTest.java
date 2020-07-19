@@ -124,6 +124,7 @@ public class RateManagmentControllerTest {
         assertEquals(u.size(), rates.size());
 
     }
+
     @Test
     public void getAllRatesEmpty() throws Exception {
         List<Rate> rates = new ArrayList<>();

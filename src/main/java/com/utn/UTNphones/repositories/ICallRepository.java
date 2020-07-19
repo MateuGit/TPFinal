@@ -1,8 +1,8 @@
 package com.utn.UTNphones.repositories;
 
 import com.utn.UTNphones.domains.Call;
-import com.utn.UTNphones.domains.dto.responses.CityTop;
 import com.utn.UTNphones.domains.Phoneline;
+import com.utn.UTNphones.domains.dto.responses.CityTop;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
